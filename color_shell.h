@@ -20,7 +20,7 @@
 #if !defined(COLOR_SHELL_H)
 #define COLOR_SHELL_H
 
-#define COLOR_SHELL_VERSION 0.0
+#define COLOR_SHELL_VERSION 1.0
 
 void w_red(char *fmt, ...);
 void w_green(char *fmt, ...);
@@ -35,7 +35,7 @@ void w_rewind(void);
 #include <windows.h>
 
 void set_color(int color);
-HANDLE out = NULL;
+HANDLE out;
 
 /* Color taken by SetConsoleTextAttribute() */
 #define RED FOREGROUND_RED
