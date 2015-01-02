@@ -2,7 +2,7 @@ CC=gcc
 CFLAGS=
 LDFLAGS=-s -std=c99
 EXEC=test
-SRC=test.c ../color_shell.c
+SRC=test.c ../src/color_shell.c
 OBJ=$(SRC:.c=.o)
 
 all: $(SRC) $(EXEC) __clean__
